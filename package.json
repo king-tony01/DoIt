@@ -2,7 +2,7 @@
   "name": "doit",
   "version": "1.0.0",
   "description": "This is a simple TO-DO application using pure vanilla js. I will constantly make improvements.",
-  "main": "app.js",
+  "main": "/private/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
