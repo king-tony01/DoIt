@@ -1,0 +1,23 @@
+{
+  "name": "doit",
+  "version": "1.0.0",
+  "description": "This is a simple TO-DO application using pure vanilla js. I will constantly make improvements.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/king-tony01/DoIt.git"
+  },
+  "keywords": [
+    "To-DO",
+    "Task"
+  ],
+  "author": "King Tony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/king-tony01/DoIt/issues"
+  },
+  "homepage": "https://github.com/king-tony01/DoIt#readme"
+}
