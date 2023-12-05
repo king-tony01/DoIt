@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--<link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.css" /> -->
+    <link rel="stylesheet" href="/private/main.css" />
+    <title>DoIt | Home</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="/"><img src="/assets/icons/logo.png" alt="" /></a>
+        <ul>
+          <li>
+            <button class="tab active" data-id="dashboard" id="dashboard-tab">
+              <img src="/assets/icons/dashboard.png" alt="" />Dashboard
+            </button>
+          </li>
+          <li>
+            <button class="tab" data-id="task" id="task-tab">
+              <img src="/assets/icons/tasks.png" alt="" />Tasks
+            </button>
+          </li>
+        </ul>
+        <button class="tab logout" data-id="logout">
+          <img src="/assets/icons/logout.png" alt="" />Logout
+        </button>
+      </nav>
+      <section class="wrapper">
+        <section class="header">
+          <div class="search">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search tasks"
+            />
+          </div>
+          <div class="user-actions">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user"></i>
+          </div>
+        </section>
+        <section class="page"></section>
+      </section>
+      <section class="modal">
+        <form action="" class="task-input">
+          <div class="task-input-head">
+            <h3>New Task</h3>
+            <i class="fas fa-close"></i>
+          </div>
+          <input
+            type="text"
+            name="taskTitle"
+            id="task-title"
+            placeholder="Title"
+          />
+          <textarea name="desc" id="desc" placeholder="Description"></textarea>
+          <select name="duration" id="duration">
+            <option value="1">A Day</option>
+            <option value="2">2 Days</option>
+            <option value="3">3 Days</option>
+            <option value="4">4 Days</option>
+            <option value="5">5 Days</option>
+            <option value="6">6 Days</option>
+            <option value="7">1 Week</option>
+            <option value="14">2 Weeks</option>
+            <option value="30">A Month</option>
+            <option value="60">2 Months</option>
+            <option value="90">3 Months</option>
+          </select>
+          <div class="level">
+            <p>Priority:</p>
+            <button class="level-select" data-id="low">Low</button
+            ><button class="level-select" data-id="medium">Medium</button
+            ><button class="level-select" data-id="high">High</button>
+          </div>
+          <button id="create">Create</button>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="/private/js/app.js"></script>
+  </body>
+</html>
